@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Emilia Piccione</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Orange Works <img width="40" src="images/icon.png" alt=""></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
+                <span class="icon-spinner"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlHdzVTjRGtNHrshmtqMBMrDrLhNLqwbmmMWwdmRzjcpvTpVZVbRfkWLHRFfRnCDqLpNB#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#myModal">Fill me!</button>
+                    </li>
+            </div>
+        </div>
+
+    </nav>
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Fill me!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="php/code.php" method="post">
+                    </div>
+                        <label class="form-label">Name <input name="name" type="text" class="form-control"required placeholder="Name Surname"></label>
+                        
+                        <label class="form-label">Email<input name="email" type="email" class="form-control" required placeholder="mail@mymail.com"><div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div></label>
+                
+                        <label class="form-label">Age<input name="age" type="number" class="form-control" min="18" max="70" placeholder="18>70"></label>
+                
+                        <label class="form-label">Comments<textarea name="comments" class="form-control"></textarea></label>
+                
+                        <div class="form-check"><p>Art specialty</p>
+                        <label class="form-check-label">Photograph <input type="checkbox" name="art" value="Photograph"></label>
+                        <label class="form-check-label">Video<input type="checkbox"name="art" value="Video"></label>
+                        <label class="form-check-label">Painting<input type="checkbox"name="art" value="Painting"></label>
+                    </div>
+                
+                       <div class="form-check"><p>Type of camera?</p>
+                        <label class="form-check-label">Short length<input name="question"  type="radio" value="Short length"></label>
+                        <label class="form-check-label">Large length<input name="question" type="radio" value="Large lenght"></label>
+                    </div> 
+                        <p>Country</p>
+                        <select name="country">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Japan">Japan</option>
+                            <option value="New Zeland">New Zeland</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Spain">Spain</option>
+                            <option value="UK">UK</option>
+                            <option value="USA">USA</option>
+                        
+                        </select>
+                
+                        <p>Color palette</p>
+                        <select name="colors" multiple>
+                            <option value="orange">Orange</option>
+                            <option value="blue">Blues</option>
+                            <option value="pinks">Pinks</option>
+                            <option value="bright">Bright</option>
+                            <option value="darks">Darks</option>
+                        
+                        </select>
+                
+                
+                
+                        <button>Send</button>
+                
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <h1>Landscape searching</h1>
+
+        <div class="container-xl">
+
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Works</h1>
+            <p> Let me show you my projects</p>
+            <p> The research of orange type of landscapes. The searching for new color in the combine palette of the
+                photopraph. The work consist in looking for an specific type of lifestyle and viewing. Join me and see
+                with me the world in orange. </p>
+        </div>
+        <div class="container-xl">
+            <div class="row row-cols-md-1 row-cols-lg-2 row-cols-xl-3 jutify-content-between">
+
+                <div class="col"><a href="images/land2.jpg" data-lightbox="image-1" data-title="Orange views"><img
+                            class="img-fluid" src="images/land2.jpg" alt="1"></a></div>
+
+                <div class="col"><a href="images/land7.jpg" data-lightbox="image-1" data-title="Orange views"><img
+                            class="img-fluid" src="images/land7.jpg" alt="1"></a></div>
+
+                <div class="col"><a href="images/land4.jpg" data-lightbox="image-1" data-title="Orange views"><img
+                            class="img-fluid" src="images/land4.jpg" alt="1"></a></div>
+
+                <div class="col"><a href="images/land5.jpg" data-lightbox="image-1" data-title="Orange views"><img
+                            class="img-fluid" src="images/land5.jpg" alt="1"></a></div>
+
+                <div class="col"><a href="images/land3.jpg" data-lightbox="image-1" data-title="Orange views"><img
+                            class="img-fluid" src="images/land3.jpg" alt="1"></a></div>
+
+                <div class="col"><a href="images/land.jpg" data-lightbox="image-1" data-title="Orange views"><img
+                            class="img-fluid" src="images/land.jpg" alt="1"></a></div>
+
+
+            </div>
+        </div>
+        <section class="container-xl">
+            <div class="row row-cols-xl-2 row-cols-lg-1 row-cols-md-1 row-cols-sm-1">
+                <div class="col">
+                    <h1>Grow your skills with us</h1>
+                    <p>Our mission is to help your art skills grow. You can consult anytime, join us in the reserach of new pictures.</p>
+                    <p class="border"><a href="https://www.linkedin.com/feed/" target="_blank"> Contact </a></p>
+                </div>
+                <div class="col">
+                    <video loop autoplay muted class="img-thumbnail" src="video/video1.mov"></video>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <div class="grid">
+        <div>Light Orange</div>
+        <div>Orange</div>
+        <div>Dark Orange</div>
+    </div>
+
+    <footer class="container-xl">
+        <video loop autoplay muted class img=fluid src="video/video2.mov"></video>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        lightbox.option({
+            'resizeDuration': 100,
+            'wrapAround': true, 'albumLabel': "Image %1 of %2"
+        })
+    </script>
+</body>
+
+</html>
