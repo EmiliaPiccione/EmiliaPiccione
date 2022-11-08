@@ -5,9 +5,17 @@
 
 a[data-lightbox] img {margin-top: 40px; transition: all 0.5s linear; }
 
-img:hover {filter: contrast(20%) brightness(100%)}
+img:hover {filter: contrast(30%) brightness(50%)}
 
-body header div {background-image:url(../images/land6.jpg);background-repeat: no-repeat; height: 400px; width:100%; border: solid rgba(124, 72, 20, 0.274); background-size: cover; background-position: 0px -10px ; }
+#animation { height: 40px; border: solid rgba(124, 72, 20, 0.274); animation-name: move; animation-duration: 4s; animation-delay:1.5s; animation-fill-mode:both; animation-iteration-count:infinite; animation-direction: alternate-reverse; }
+
+@keyframes move{ from{background-color: rgb(255, 136, 0); } to{background-color: rgba(132, 57, 3, 0.623);}}
+
+#animation2 { height: 40px; animation-name: transform; animation-duration: 4s; animation-delay:1.5s; animation-fill-mode:both; animation-iteration-count:calc(2); animation-direction: alternate-reverse; }
+
+@keyframes transform{ from{background-color: rgba(132, 57, 3, 0.623); transform:translate(700px);} to{background-color: rgb(255, 215, 169);}}
+
+body header div {background-image:url(../images/land6.jpg);background-repeat: no-repeat; height: 350px; width:100%; border: solid rgba(124, 72, 20, 0.274); background-size: cover; background-position: 0px 0px ; }
 
 
 h1 {font-size: 48px; font-family: myFont; font-weight: 700;}
