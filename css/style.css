@@ -3,19 +3,20 @@
 @font-face {font-family:myFont2; src: url(../font/Louis\ George\ Cafe\ Bold.ttf); font-weight: 100;}
 
 
-a[data-lightbox] img {margin-top: 40px; transition: all 0.5s linear; }
+a[data-lightbox] img {margin-top: 25px; transition: all 0.5s linear; }
 
-img:hover {filter: contrast(30%) brightness(50%)}
+img:hover {filter:sepia(80%)}
 
-#animation { height: 40px; border: solid rgba(124, 72, 20, 0.274); animation-name: move; animation-duration: 4s; animation-delay:1.5s; animation-fill-mode:both; animation-iteration-count:infinite; animation-direction: alternate-reverse; }
+#animation { height: 40px;border: solid rgba(124, 72, 20, 0.099); animation-name: transform; animation-duration: 3.5s; animation-delay:1s; animation-fill-mode:both; animation-iteration-count:calc(2); animation-direction: alternate-reverse; }
 
-@keyframes move{ from{background-color: rgb(255, 136, 0); } to{background-color: rgba(132, 57, 3, 0.623);}}
+@keyframes transform{ from{background-color: rgba(253, 107, 2, 0.823); transform:scaleX(2);} to{background-color: rgba(132, 57, 3, 0.623);}}
 
-#animation2 { height: 40px; animation-name: transform; animation-duration: 4s; animation-delay:1.5s; animation-fill-mode:both; animation-iteration-count:calc(2); animation-direction: alternate-reverse; }
+#animation2 { height: 40px; ; animation-name: move; animation-duration: 5s; animation-delay:1s; animation-fill-mode:both; animation-iteration-count:infinite; animation-direction: alternate-reverse; }
 
-@keyframes transform{ from{background-color: rgba(132, 57, 3, 0.623); transform:translate(700px);} to{background-color: rgb(255, 215, 169);}}
+@keyframes move{ from{background-color: rgba(169, 74, 6, 0.623) } to{background-color:  rgb(248, 178, 98);}}
 
-body header div {background-image:url(../images/land6.jpg);background-repeat: no-repeat; height: 350px; width:100%; border: solid rgba(124, 72, 20, 0.274); background-size: cover; background-position: 0px 0px ; }
+
+body header div {background-image:url(../images/land6.jpg);background-repeat: no-repeat; height: 400px; width:100%; border: solid rgba(124, 72, 20, 0.274); background-size: cover; background-position: 0px 0px ; }
 
 
 h1 {font-size: 48px; font-family: myFont; font-weight: 700;}
