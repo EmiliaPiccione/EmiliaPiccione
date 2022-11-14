@@ -11,9 +11,9 @@ img:hover {filter:sepia(80%)}
 
 @keyframes transform{ from{background-color: rgba(253, 107, 2, 0.823); transform:scaleX(2);} to{background-color: rgba(132, 57, 3, 0.623);}}
 
-#animation2 { height: 40px; ; animation-name: move; animation-duration: 5s; animation-delay:1s; animation-fill-mode:both; animation-iteration-count:infinite; animation-direction: alternate-reverse; }
+#animation2 { height: 40px; ; animation-name: move; animation-duration: 3.5s; animation-delay:1s; animation-fill-mode:both; animation-iteration-count:infinite; animation-direction: alternate-reverse; }
 
-@keyframes move{ from{background-color: rgba(169, 74, 6, 0.623) } to{background-color:  rgb(248, 178, 98);}}
+@keyframes move{ from{background-color: rgba(132, 57, 3, 0.623) } to{background-color:  rgba(251, 129, 42, 0.582);}}
 
 
 body header div {background-image:url(../images/land6.jpg);background-repeat: no-repeat; height: 400px; width:100%; border: solid rgba(124, 72, 20, 0.274); background-size: cover; background-position: 0px 0px ; }
